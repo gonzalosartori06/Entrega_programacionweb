@@ -1,13 +1,13 @@
 body {
   font-family: 'Quicksand', sans-serif;
-  background-color: #fff8f3;
-  color: #333;
+  background-color: white;
+  color: #1a4166;
   font-size: 1.2rem;
   line-height: 1.4em;
   margin: 0
 }
 h1, h2 {
-  font-family: 'Pacifico', cursive;
+  font-family: 'Pacifico';
   color: #1c2b4b;
   line-height: 1.3em; 
   font-size: 2rem;
@@ -36,13 +36,22 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1.4rem 0;
+  padding: 0.6rem 0;
   border-bottom: 1px solid #eee;
 }
 .logo-img {
-  height: 110px;
+  height: 80px;
   width: auto;
   max-width: 120%;
+}
+.logo-link {
+  display: block;
+  text-decoration: none;
+}
+
+.logo-link img {
+  display: block;
+  margin: 0 auto;
 }
 .header-inferior {
   background-color: #fef6f0;
@@ -50,16 +59,53 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 4px solid #ff8a80;
+  border-bottom: 4px solid  #ff8a80; 
   padding: 0 2rem;
 }
-.nav-izq,
+.icono-inicio {
+  height: 30px; 
+  width: auto;
+  display: block;
+}
+.nav-izq {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
+.nav-izq li {
+  list-style: none;
+}
 .nav-der {
   list-style: none;
   display: flex;
+  align-items: center;
   gap: 2rem;
   margin: 0;
   padding: 0;
+}
+.nav-der li a {
+  text-decoration: none;
+  color: #1c2b4b;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.boton-contacto {
+  background-color: #1c2b4b; 
+  color: #fef6f0 !important;
+  padding: 0.4rem 1rem;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.boton-contacto:hover {
+  background-color: #fdd626; 
+  color: #fef6f0;
+  transform: scale(1.05);
 }
 .header-inferior ul {
   list-style: none;
@@ -85,7 +131,7 @@ header h1 {
 header h1 span {
   display: block;
   font-size: 3rem;
-  color: #ff4b6e;
+  color:#18d1d1;
 }
 
 .subtitulo {
@@ -104,15 +150,8 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #1a4166;
   font-weight: bold;
-}
-
-.boton-contacto {
-  background-color: #ff69b4;
-  color: white;
-  padding: 8px 12px;
-  border-radius: 5px;
 }
 
 .footer {
@@ -122,5 +161,5 @@ nav a {
     margin-top: 6rem;
 }
 .main{
-    padding-top: 14rem;
+    padding-top: 11rem;
 }
