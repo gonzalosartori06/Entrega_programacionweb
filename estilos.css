@@ -6,6 +6,7 @@ body {
   line-height: 1.4em;
   margin: 0
 }
+
 h1, h2 {
   font-family: 'Pacifico';
   color: #1c2b4b;
@@ -18,11 +19,13 @@ body, p {
   color: #444;
   margin-bottom: 1.6em;
 }
+
 .container {
-    width: 85%;
-    max-width: 850px;
-    margin: 0 auto;
+  width: 85%;
+  max-width: 850px;
+  margin: 0 auto;
 }
+
 header {
   position: fixed;
   left: 0;
@@ -31,19 +34,22 @@ header {
   width: 100%;
   z-index: 1000;
 }
-.header-superior {
-  background-color: white;
+
+.header-logo-superior {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
   padding: 0.6rem 0;
   border-bottom: 1px solid #eee;
 }
+
 .logo-img {
   height: 80px;
   width: auto;
-  max-width: 120%;
+  max-width: 100%;
 }
+
 .logo-link {
   display: block;
   text-decoration: none;
@@ -53,20 +59,23 @@ header {
   display: block;
   margin: 0 auto;
 }
+
 .header-inferior {
   background-color: #fef6f0;
   height: 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 4px solid  #ff8a80; 
+  border-bottom: 4px solid #ff8a80;
   padding: 0 2rem;
 }
+
 .icono-inicio {
   height: 30px; 
   width: auto;
   display: block;
 }
+
 .nav-izq {
   display: flex;
   align-items: center;
@@ -74,9 +83,11 @@ header {
   margin: 0;
   padding: 0;
 }
+
 .nav-izq li {
   list-style: none;
 }
+
 .nav-der {
   list-style: none;
   display: flex;
@@ -85,12 +96,14 @@ header {
   margin: 0;
   padding: 0;
 }
+
 .nav-der li a {
   text-decoration: none;
   color: #1c2b4b;
   font-weight: bold;
   font-size: 1rem;
 }
+
 .boton-contacto {
   background-color: #1c2b4b; 
   color: #fef6f0 !important;
@@ -102,11 +115,13 @@ header {
   text-decoration: none;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
 .boton-contacto:hover {
   background-color: #fdd626; 
   color: #fef6f0;
   transform: scale(1.05);
 }
+
 .header-inferior ul {
   list-style: none;
   display: flex;
@@ -114,6 +129,7 @@ header {
   padding: 0;
   margin: 0;
 }
+
 .header-inferior a {
   text-decoration: none;
   color: #1c2b4b;
@@ -131,7 +147,7 @@ header h1 {
 header h1 span {
   display: block;
   font-size: 3rem;
-  color:#18d1d1;
+  color: #18d1d1;
 }
 
 .subtitulo {
@@ -139,7 +155,6 @@ header h1 span {
   margin-top: 0.5rem;
   color: #666;
 }
-
 
 nav ul {
   list-style: none;
@@ -155,11 +170,45 @@ nav a {
 }
 
 .footer {
-    background: #d0d0d0;
-    padding: 4rem 0;
-    text-align: center;
-    margin-top: 6rem;
+  background: #d0d0d0;
+  padding: 4rem 0;
+  text-align: center;
+  margin-top: 6rem;
 }
-.main{
-    padding-top: 11rem;
+
+.main {
+  padding-top: 11rem;
+}
+
+.header-mobile {
+  display: none;
+}
+@media (max-width: 466px) {
+  .logo-img {
+    height: 60px;
+  }
+
+  .nav-izq {
+    display: none;
+  }
+  .nav-der {
+    gap: 0.5rem;
+  }
+
+  .nav-der li a {
+    font-size: 0.75rem;
+  }
+
+  .boton-contacto {
+    padding: 0.3rem 0.7rem;
+    font-size: 0.5rem;
+  }
+
+  .header-inferior {
+    padding: 0.2rem 1rem;
+  }
+
+  .main {
+    padding-top: 8.5rem;
+  }
 }
