@@ -4,17 +4,17 @@ body {
   color: #1a4166;
   font-size: 1.2rem;
   line-height: 1.4em;
-  margin: 0
+  margin: 0;
 }
 
 h1, h2 {
   font-family: 'Pacifico';
   color: #1c2b4b;
-  line-height: 1.3em; 
+  line-height: 1.3em;
   font-size: 2rem;
 }
 
-body, p {
+p {
   font-family: 'Quicksand', sans-serif;
   color: #444;
   margin-bottom: 1.6em;
@@ -71,7 +71,7 @@ header {
 }
 
 .icono-inicio {
-  height: 30px; 
+  height: 30px;
   width: auto;
   display: block;
 }
@@ -105,7 +105,7 @@ header {
 }
 
 .boton-contacto {
-  background-color: #1c2b4b; 
+  background-color: #1c2b4b;
   color: #fef6f0 !important;
   padding: 0.4rem 1rem;
   border: none;
@@ -117,7 +117,7 @@ header {
 }
 
 .boton-contacto:hover {
-  background-color: #fdd626; 
+  background-color: #fdd626;
   color: #fef6f0;
   transform: scale(1.05);
 }
@@ -180,9 +180,58 @@ nav a {
   padding-top: 11rem;
 }
 
+.seccion-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 3rem;
+  margin-bottom: 4rem;
+}
+
+.texto-main {
+  flex: 1;
+  max-width: 50%;
+}
+
+.texto-main h1 {
+  text-align: center;
+  color: #1c2b4b;
+  font-family: 'Pacifico', cursive;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.texto-main p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.seccion-main img {
+  max-width: 100%;
+  border-radius: 20px;
+  flex-shrink: 0;
+}
+
+.img-creacion {
+  width: 450px;
+  height: auto;
+}
+
+.img-tecnicas {
+  width: 370px;
+  height: auto;
+}
+
+.img-restauracion {
+  width: 370px;
+  height: auto;
+}
+
 .header-mobile {
   display: none;
 }
+
 @media (max-width: 466px) {
   .logo-img {
     height: 60px;
@@ -191,6 +240,7 @@ nav a {
   .nav-izq {
     display: none;
   }
+
   .nav-der {
     gap: 0.5rem;
   }
@@ -209,6 +259,33 @@ nav a {
   }
 
   .main {
-    padding-top: 8.5rem;
+    padding-top: 9.5rem;
+  }
+
+  .seccion-main {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 1.5rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .texto-main {
+    max-width: 100%;
+  }
+
+  .seccion-main img {
+    width: 100%;
+    max-width: 280px;
+    margin-top: 0.5rem;
+  }
+}
+
+@media (min-width: 460px){
+  .seccion-invertida {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3rem;
   }
 }
