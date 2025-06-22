@@ -7,6 +7,13 @@ body {
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+html {
+  scroll-padding-top: 200px;
+}
+
 h1, h2 {
   font-family: 'Pacifico';
   color: #1c2b4b;
@@ -228,6 +235,23 @@ nav a {
   height: auto;
 }
 
+.titulo-horarios {
+  text-align: center;
+  font-family: 'Pacifico', cursive;
+  color: #1c2b4b;
+  font-size: 2rem;
+  margin-top: 4rem;
+  margin-bottom: 1rem;
+}
+
+.img-horarios {
+  display: block;
+  margin: 0 auto 4rem auto;
+  max-width: 80%;
+  height: auto;
+  border-radius: 10px;
+}
+
 .header-mobile {
   display: none;
 }
@@ -287,5 +311,19 @@ nav a {
     justify-content: space-between;
     align-items: center;
     gap: 3rem;
+  }
+}
+@media (max-width: 466px) {
+  .seccion-main,
+  .seccion-invertida {
+    flex-direction: column !important;
+  }
+
+  .seccion-invertida .texto-main {
+    order: 1;
+  }
+
+  .seccion-invertida img {
+    order: 2;
   }
 }
